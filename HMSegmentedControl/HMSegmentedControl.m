@@ -415,7 +415,8 @@
             
             // Fix rect position/size to avoid blurry labels
             textRect = CGRectMake(ceilf(textRect.origin.x), ceilf(textRect.origin.y), ceilf(textRect.size.width), ceilf(textRect.size.height));
-
+            imageRect = CGRectMake(ceilf(imageRect.origin.x), ceilf(imageRect.origin.y), ceilf(imageRect.size.width), ceilf(imageRect.size.height));
+            
             CATextLayer *titleLayer = [CATextLayer layer];
             titleLayer.frame = textRect;
             titleLayer.alignmentMode = kCAAlignmentCenter;
